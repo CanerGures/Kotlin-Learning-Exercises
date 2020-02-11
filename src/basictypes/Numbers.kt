@@ -45,7 +45,42 @@ fun main() {
 
     //Unsigned types allows to write most performance friendly types maxByte=127 minByte= -128 UByte = 255
 
-    val number : UByte = 254u
-    println ("number" + number)
+    val number: UByte = 254u
+    println("number" + number)
+
+    //different representations of numbers
+    val longnumber = 1569L
+    val floatnumber1 = 12.90F
+    val floatnumber = 13f
+    val doublenumber = 3.14
+    val doublenumber2 = 3.13e10
+    val decimalnumber = 1969
+    val hexadecimal = 0x868
+    val binarynumber = 0b010111010
+
+// also numbers can being represented with underscore "_"
+
+    val oneMillion = 1_000_000
+    val creditCardNumber = 2354_5645_6866_1232
+
+    /**
+     * Boxed : keeping variables as object references
+     * Unboxed : keeping the variables as primitive
+     *   *** operator used when comparing reference of variables
+     *   ** operator used when comparing values of variables
+     * */
+
+    val number3: Int = 10000
+    println(number3 === number3) // true
+    val boxedNumber: Int? = number3
+    val anotherBoxedNumber: Int? = number3
+    println(boxedNumber === anotherBoxedNumber) //false
+
+    val number2: Int = 10000
+    println(number2 === number2) // true
+    val boxedNumber1: Int? = number2
+    val anotherBoxedNumber1: Int? = number2
+    println(boxedNumber1 == anotherBoxedNumber1) //true
+
 
 }
