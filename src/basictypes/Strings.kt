@@ -24,5 +24,13 @@ fun main() {
          ******
         *********
     """
+    //spaces behind $ sign will be deleted for all lines with trimIndent
+    val rawPineTree2 = """  
+                   *
+     $             ***
+                 ******
+                *********
+    """.trimIndent()
+    //spaces behind $ sign will be deleted for just the line with trimMargin
     println(rawPineTree)
 }
