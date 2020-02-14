@@ -10,12 +10,13 @@ fun main() {
     } else {
         println("Öğrenci değil")
     }
+    val grade = readLine()!!.toDouble()
 
     val isStudent = false
     // you can assign result of the if else expression to a variable (ternary operator)
     val name = if (isStudent) "true" else "false"
 
-    val grade = 100
+
     if (grade <= 100 && grade >= 85) {
         println("AA")
     } else if (grade <= 85 && grade >= 70) {
