@@ -29,6 +29,14 @@ fun main() {
 
     print("Result = ${calculate(numberOne, numberTwo)}")
 
+    //you can use func. with default arguments like below. If you won't call the func. with all parameters you can write default values to paramaters in func.
+    reformatString("message", true, 7, "tr")
+    reformatString("message", size = 7, lang = "tr")
+    reformatString("message", true, 7, "tr")
+    reformatString("message", size = 7)
+
+    getUserInfo("caner", "grs", "bursa", "tr")
+    getUserInfo(*arrayOf("caner", "grs", "bursa", "tr"))
 }
 
 //numberone and numbertwo are paramaters. ":String" is return type of the function.
@@ -43,7 +51,20 @@ fun calculate(numberOne: Int, numberTwo: Int): Double {
     return result.toDouble()
 }
 
-fun getValue(printMessage: String): Int {
+fun getValue(printMessage: String = ""): Int {
     print(printMessage)
-    return readLine()!!.toInt()
+    val value = readLine()!!.toInt()
+    println("---------------------------")
+    return value
 }
+
+
+fun reformatString(message: String, isUpperCase: Boolean = false, size: Int, lang: String = "tr") {
+
+}
+
+//vararg can be used if parameter number unknown.you cannot use vararg twice
+fun getUserInfo(vararg userInfo: String) {
+
+}
+
