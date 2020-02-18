@@ -18,7 +18,7 @@ fun main() {
     }
 
     if (countrycode.toLowerCase() == "tr" || countrycode.toLowerCase() == "az")
-        println(println("TC Vatandaşı"))
+        println(println("TC Citizen"))
     else if (countrycode.toLowerCase() == "ar")
         println("Arab Citizen")
     else if (countrycode.toLowerCase() == "fr")
@@ -29,19 +29,19 @@ fun main() {
     //you must use curly bracet{} if you want to use more than one line
 
     var countryCode2: String = if (countrycode.toLowerCase() == "tr" || countrycode.toLowerCase() == "az") {
-        println("Turki Vatandası")
+        println("Turki Citizen")
         "90"
     } else if (countrycode.toLowerCase() == "ar") {
-        println("Arab Vatandası")
+        println("Arab Citizen")
         "80"
     } else if (countrycode.toLowerCase() == "fr") {
-        println("France Vatandası")
+        println("France Citizen")
         "60"
     } else if (countrycode.toLowerCase() == "ru") {
-        println("Russian Vatandası")
+        println("Russian Citizen")
         "50"
     } else if (countrycode.toLowerCase() == "uk") {
-        println("United Kingdom Vatandası")
+        println("United Kingdom Citizen")
         "40"
     } else {
         "30"
@@ -50,23 +50,23 @@ fun main() {
 
     countryCode2 = when (countryCode2.toLowerCase()) {
         "tr", "az" -> {
-            println("TC Vatandası")
+            println("TC Citizen")
             "90"
         }
         "ar" -> {
-            println("Arab Vatandası")
+            println("Arab Citizen")
             "80"
         }
         "fr" -> {
-            println("France Vatandası")
+            println("France Citizen")
             "70"
         }
         "ru" -> {
-            println("Russian Vatandası")
+            println("Russian Citizen")
             "60"
         }
         "uk" -> {
-            println("United Kingdom Vatandası")
+            println("United Kingdom Citizen")
             "50"
         }
         else -> {
@@ -75,23 +75,23 @@ fun main() {
     }
     countryCode2 = when (countryCode2.toLowerCase()) {
         "tr", "az" -> {
-            println("TC Vatandası")
+            println("TC Citizen")
             "90"
         }
         "ar" -> {
-            println("Arab Vatandası")
+            println("Arab Citizen")
             "80"
         }
         "fr" -> {
-            println("France Vatandası")
+            println("France Citizen")
             "70"
         }
         "ru" -> {
-            println("Russian Vatandası")
+            println("Russian Citizen")
             "60"
         }
         "uk" -> {
-            println("United Kingdom Vatandası")
+            println("United Kingdom Citizen")
             "50"
         }
         else -> {
@@ -105,11 +105,11 @@ fun main() {
     val ruCode = "ru"
     val ukCode = "uk"
     when (countrycode.toLowerCase()) {
-        trCode, "az" -> println("TC Vatandası")
-        arCode -> println("Arab Vatandası")
-        frCode -> println("France Vatandası")
-        ruCode -> println("Russian Vatandası")
-        ukCode -> println("United Kingdom Vatandası")
+        trCode, "az" -> println("TC Citizen")
+        arCode -> println("Arab Citizen")
+        frCode -> println("France Citizen")
+        ruCode -> println("Russian Citizen")
+        ukCode -> println("United Kingdom Citizen")
     }
 
     when (readLine()!!.toInt()) {
