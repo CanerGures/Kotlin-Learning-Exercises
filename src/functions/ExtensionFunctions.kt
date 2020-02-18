@@ -18,6 +18,7 @@ fun main() {
 //         If log is only extension function. Called with (dot).
     //      Extension functions can be seen in yellow color expressions.
     "3" extPlus "" log ""
+    "4" extPlus "" log ""
 }
 
 fun log2(number: Number) {
